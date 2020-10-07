@@ -7,14 +7,17 @@ II. Dataset
 We obtain two datasets Chest X-Ray Images (Pneumonia) and covid19-pneumonia-normal-chest-xray-pa-dataset from Kaggle as our data.
 
 III. Experiment
+
+
 (i) Object of study
 We want to perform classification on patients' chest-xray images to help physicians separate Normal, Penumonia and COVID-19 patients to speed up the process of diagnosing COVID-19 patients and help control the coronavius pandemic.
+
+
 
 (ii) Clustering
 Before applying supervised machine learning algorithms, we created t-SNE and PCA visualizations to know more about our dataset, and t-SNE turns out to have a better performance in showing clusters. However, we discovered that part of Normal class locate between pneumonia and COVID in the visualization. It implys us that we need to use data augmentation to minimize the influence. We also noticed that there are slight differences between our test and train datasets
 
 
-            Plot 1: t-SNE visualization for the dataset
 
 (iii) Algorithems implemented
 In this research, we used various machine learning models and deep learning models to do the classification, including: (1) Histogram of Oriented Gradients (HOG) + KNN, SVM, Logistic Regression; (2) Histogram of Oriented Gradients (HOG) + SVM; (3) Histogram of Oriented Gradients (HOG) + Logistic Regression; (4) Convoluted Neural Network; (5) Resnet 18; (6) Resnet 50; (7) Generative Adversarial Networks 
